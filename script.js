@@ -5,6 +5,9 @@ let contents = [
 ];
 let tabContent = document.querySelector(".tabcontent");
 let tabs = document.querySelectorAll(".tabs .tab");
+document.addEventListener("DOMContentLoaded", () => {
+  tabContent.innerHTML = contents[0];
+});
 tabs.forEach((tab, index) => {
   tab.addEventListener("click", () => {
     tabs.forEach((tab) => {
